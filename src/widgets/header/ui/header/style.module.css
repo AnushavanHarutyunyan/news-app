@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    width: 100%;
+}
+
+.header_menuList {
+    flex-direction: row;
+    display: flex;
+    gap: 35px;
+}
+
+.header_menuList_item {
+    list-style: none;
+}
+
+.header_menuList_link {
+    text-decoration: none;
+}
+
+.header_burgerMenu {
+    display: flex;
+    gap: 37px;
+}
+
+.loginBlock {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.loginBlock > div{
+    width: 100% !important;
+    padding: 0 16px;
+}

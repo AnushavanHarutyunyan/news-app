@@ -1,0 +1,16 @@
+.btn {
+    width: 70%;
+    line-height: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color:#4e4e4e
+}
