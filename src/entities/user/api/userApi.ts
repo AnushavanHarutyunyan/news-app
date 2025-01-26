@@ -8,7 +8,7 @@ const userApi = createApi({
     baseQuery: fetchBaseQuery({ baseUrl: API }),
     endpoints: (builder) => ({
         getUserById: builder.query({
-            query: (id) => `?${id}`,
+            query: (id) => `?id=${id}`,
             async onQueryStarted(_args, { dispatch, queryFulfilled }) {
                 const { data } = await queryFulfilled;
                 dispatch(setUser(data));
@@ -17,5 +17,5 @@ const userApi = createApi({
     }),
 });
 
-export const { useGetUserByIdQuery, } = userApi;
+export const { useGetUserByIdQuery } = userApi;
 export default userApi;

@@ -1,4 +1,4 @@
-import Header from "./ui/header/header";
+import { Header } from "./ui/Header/header";
 import { NewsList } from "../news";
 
 export { Header };

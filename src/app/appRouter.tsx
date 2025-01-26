@@ -1,6 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import { BaseLayout } from "./layout/BaseLayout";
-import { LoginPage, MainPage, NewsPage, ProfilePage } from "@/pages";
+import {
+    CurrencyPage,
+    LoginPage,
+    MainPage,
+    NewsPage,
+    ProfilePage,
+    WeatherPage,
+} from "@/pages";
 import ProtectedRoute from "./provider/protectedRoute";
 
 export const appRouter = createBrowserRouter(
@@ -11,11 +18,7 @@ export const appRouter = createBrowserRouter(
             children: [
                 {
                     path: "/",
-                    element: (
-                        
-                            <MainPage />
-                        
-                    ),
+                    element: <MainPage />,
                 },
                 {
                     path: "/news",
@@ -33,6 +36,14 @@ export const appRouter = createBrowserRouter(
                         </ProtectedRoute>
                     ),
                 },
+                {
+                    path: "/weather",
+                    element: <WeatherPage />,
+                },
+                {
+                    path: "/currency",
+                    element: <CurrencyPage />,
+                },
             ],
         },
         {
@@ -48,5 +59,5 @@ export const appRouter = createBrowserRouter(
             v7_relativeSplatPath: true,
             v7_skipActionErrorRevalidation: true,
         },
-    }
+    },
 );

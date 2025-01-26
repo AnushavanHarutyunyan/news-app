@@ -1,0 +1,17 @@
+.weather__section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.wrather__section_block {
+    max-width: 100%;
+}
+
+.wrather__section_input {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 35px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
